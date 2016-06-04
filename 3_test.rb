@@ -29,3 +29,11 @@ while count<20
     end
 end
 
+
+#3
+def age()
+    puts "What`s your age?"
+    hisage=gets.chomp
+    puts "#{hisage}  ain`t nothing but a number!"
+end
+age()
