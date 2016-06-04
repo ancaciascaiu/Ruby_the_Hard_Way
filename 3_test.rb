@@ -18,3 +18,14 @@ def adstr(a, b)
 end
 adstr("Anca", "Silviu")
 
+#2
+count = 0
+while count<20
+    count+=1
+    if count.even?
+        puts "#{count} Even"
+    else
+        puts "#{count} Odd"
+    end
+end
+
