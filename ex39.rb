@@ -37,3 +37,7 @@ puts "Florida has: #{Dict.get(cities, Dict.get(states, 'Florida'))}"
 # puts every state abbreviation
 puts '-' * 10
 Dict.list(states)
+
+# puts every city in state
+puts '-' * 10
+Dict.list(cities)
