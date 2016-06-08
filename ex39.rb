@@ -18,3 +18,14 @@ Dict.set(cities, 'FL', 'Jacksonville')
 Dict.set(cities, 'NY', 'New York')
 Dict.set(cities, 'OR', 'Portland')
 
+
+# puts out some cities
+puts '-' * 10
+puts "NY State has: #{Dict.get(cities, 'NY')}"
+puts "OR State has: #{Dict.get(cities, 'OR')}"
+
+# puts some states
+puts '-' * 10
+puts "Michigan's abbreviation is: #{Dict.get(states, 'Michigan')}"
+puts "Florida's abbreviation is: #{Dict.get(states, 'Florida')}"
+
