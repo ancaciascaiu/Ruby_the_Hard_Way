@@ -49,3 +49,7 @@ state = Dict.get(states, 'Texas')
 if !state
   puts "Sorry, no Texas."
 end
+
+# default values using ||= with the nil result
+city = Dict.get(cities, 'TX', 'Does Not Exist')
+puts "The city for the state 'TX' is: #{city}"
