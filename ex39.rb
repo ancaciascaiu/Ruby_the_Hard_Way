@@ -33,3 +33,7 @@ puts "Florida's abbreviation is: #{Dict.get(states, 'Florida')}"
 puts '-' * 10
 puts "Michigan has: #{Dict.get(cities, Dict.get(states, 'Michigan'))}"
 puts "Florida has: #{Dict.get(cities, Dict.get(states, 'Florida'))}"
+
+# puts every state abbreviation
+puts '-' * 10
+Dict.list(states)
