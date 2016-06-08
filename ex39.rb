@@ -14,3 +14,7 @@ Dict.set(cities, 'CA', 'San Francisco')
 Dict.set(cities, 'MI', 'Detroit')
 Dict.set(cities, 'FL', 'Jacksonville')
 
+# add some more cities
+Dict.set(cities, 'NY', 'New York')
+Dict.set(cities, 'OR', 'Portland')
+
