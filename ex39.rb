@@ -41,3 +41,11 @@ Dict.list(states)
 # puts every city in state
 puts '-' * 10
 Dict.list(cities)
+
+puts '-' * 10
+# by default ruby says "nil" when something isn't in there
+state = Dict.get(states, 'Texas')
+
+if !state
+  puts "Sorry, no Texas."
+end
