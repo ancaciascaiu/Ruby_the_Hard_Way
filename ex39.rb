@@ -29,3 +29,7 @@ puts '-' * 10
 puts "Michigan's abbreviation is: #{Dict.get(states, 'Michigan')}"
 puts "Florida's abbreviation is: #{Dict.get(states, 'Florida')}"
 
+# do it by using the state then cities dict
+puts '-' * 10
+puts "Michigan has: #{Dict.get(cities, Dict.get(states, 'Michigan'))}"
+puts "Florida has: #{Dict.get(cities, Dict.get(states, 'Florida'))}"
