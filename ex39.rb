@@ -8,3 +8,9 @@ Dict.set(states, 'California', 'CA')
 Dict.set(states, 'New York', 'NY')
 Dict.set(states, 'Michigan', 'MI')
 
+# create a basic set of states and some cities in them
+cities = Dict.new()
+Dict.set(cities, 'CA', 'San Francisco')
+Dict.set(cities, 'MI', 'Detroit')
+Dict.set(cities, 'FL', 'Jacksonville')
+
