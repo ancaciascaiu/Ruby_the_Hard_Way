@@ -30,6 +30,18 @@ def old_roman number
 		end
 		return tens
 		
+	elsif number.to_s.length == 1
+		if number > 5
+			ones = "V" + ("I" * (number-5))
+		elsif number == 5
+			ones = "V" 
+		else
+			ones = "I" * number
+		end
+		return ones
+		
+	end
+	#return thous.to_s + hun.to_s + tens.to_s + ones.to_s
 	
 
 end
