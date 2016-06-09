@@ -8,13 +8,11 @@ def old_roman number
 	
 	ro_nr = ""
 	
-	if number/1000 == true
+	if number/1000
 		thous = "M" * (number/1000)
 		ro_nr += thous
 		number = number - (number.to_s[0].to_i*1000)
 	end
-	
-	
 	
 	if number /100 > 0
 		if number/100 > 5
