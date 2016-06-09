@@ -1,4 +1,3 @@
-
 #Write a method that when passed an integer between 1 and 3000 returns a string containing the old roman numeral.
 
 #puts "Please eneter a number that you want to convert to roman numeral:"
@@ -6,11 +5,16 @@
 
 def old_roman number
 	
-	if number.to_s.length == 4
-		thous = "M" * (number/1000)
-		return thous
+	ro_nr = ""
 	
-	elsif number.to_s.length == 3
+	if number/1000
+		thous = "M" * (number/1000)
+		ro_nr += thous
+	end
+	
+	number = number - (number.to_s[0].to_i*1000)
+	
+	if number /100
 		if number/100 > 5
 			hun = "D" + ("C" * (number/100-5))
 		elsif number/100 == 5
@@ -18,9 +22,12 @@ def old_roman number
 		else
 			hun = "C" * (number/100)
 		end
-		return hun
-		
-	elsif number.to_s.length == 2
+		ro_nr += hun
+	end
+	
+	number = number - (number.to_s[0].to_i*100)
+	
+	if number/10
 		if number/10 > 5
 			tens = "L" + ("X" * (number/10-5))
 		elsif number/10 == 5
@@ -28,9 +35,12 @@ def old_roman number
 		else
 			tens = "X" * (number/10)
 		end
-		return tens
-		
-	elsif number.to_s.length == 1
+		ro_nr += tens
+	end
+	
+	number = number - (number.to_s[0].to_i*10)
+	
+	if number/1
 		if number > 5
 			ones = "V" + ("I" * (number-5))
 		elsif number == 5
@@ -38,12 +48,18 @@ def old_roman number
 		else
 			ones = "I" * number
 		end
-		return ones
-		
+		ro_nr += ones
 	end
-	#return thous.to_s + hun.to_s + tens.to_s + ones.to_s
 	
+	return ro_nr
 
 end
 
-old_roman 1
+old_roman 2864
+old_roman 9978
+old_roman 5555
+old_roman 3333
+old_roman 234
+	
+
+
