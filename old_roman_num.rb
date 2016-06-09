@@ -10,6 +10,16 @@ def old_roman number
 		thous = "M" * (number/1000)
 		return thous
 	
+	elsif number.to_s.length == 3
+		if number/100 > 5
+			hun = "D" + ("C" * (number/100-5))
+		elsif number/100 == 5
+			hun = "D" 
+		else
+			hun = "C" * (number/100)
+		end
+		return hun
+		
 	
 
 end
