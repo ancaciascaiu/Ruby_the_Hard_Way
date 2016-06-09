@@ -20,6 +20,16 @@ def old_roman number
 		end
 		return hun
 		
+	elsif number.to_s.length == 2
+		if number/10 > 5
+			tens = "L" + ("X" * (number/10-5))
+		elsif number/10 == 5
+			tens = "L" 
+		else
+			tens = "X" * (number/10)
+		end
+		return tens
+		
 	
 
 end
